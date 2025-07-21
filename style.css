@@ -187,11 +187,7 @@ img {
     margin-right: 16px;
   }
 }
-@media (max-width: 500px) {
-  .skills-container {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 
 
