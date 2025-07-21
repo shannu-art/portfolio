@@ -144,6 +144,26 @@ img {
   margin-top: 20px;
 }
 
+/* Mobile view: row with horizontal scroll */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+
+  .skill-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    margin-right: 16px;
+  }
+}
+
+
 .skill-card {
   background: #fff;
   border-radius: 12px;
@@ -169,17 +189,7 @@ img {
   font-size: 1.1rem;
 }
 
-/* Mobile responsive adjustments */
-@media (max-width: 768px) {
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .skill-card {
-    width: 90%;
-  }
-}
 
 
 /* Contact section */
